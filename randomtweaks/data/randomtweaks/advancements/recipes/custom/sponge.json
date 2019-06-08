@@ -1,0 +1,38 @@
+{
+    "parent": "minecraft:recipes/root",
+    "rewards": {
+      "recipes": [
+        "randomtweaks:sponge"
+      ]
+    },
+    "criteria": {
+      "has_leather": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "item": "minecraft:yellow_wool"
+            },
+            {
+                "item": "minecraft:slime_ball",
+                "count": {
+                    "min": 8
+                }
+            }
+          ]
+        }
+      },
+      "has_the_recipe": {
+        "trigger": "minecraft:recipe_unlocked",
+        "conditions": {
+          "recipe": "randomtweaks:sponge"
+        }
+      }
+    },
+    "requirements": [
+      [
+        "has_leather",
+        "has_the_recipe"
+      ]
+    ]
+  }

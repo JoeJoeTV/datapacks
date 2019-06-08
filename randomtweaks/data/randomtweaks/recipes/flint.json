@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {
+      "item": "minecraft:gravel"
+    },
+    "result": "minecraft:flint",
+    "experience": 0.44,
+    "cookingtime": 800
+  }

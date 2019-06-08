@@ -1,0 +1,1 @@
+execute as @e[type=villager,tag=pcp.act,tag=pcp.act.villager,distance=..5,limit=1,sort=nearest] at @s run execute as @e[type=minecraft:armor_stand,tag=pcp.act,tag=pcp.act.stand,sort=nearest,distance=..1,limit=1] at @s align xyz positioned ~0.5 ~0.5 ~0.5 unless block ~ ~ ~ minecraft:dropper[facing=up]{Items:[]} run function #craftingplus:act/recipes

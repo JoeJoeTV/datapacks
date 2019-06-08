@@ -1,0 +1,33 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:alternatives",
+                    "children": [
+                        {
+                            "type": "minecraft:item",
+                            "name": "minecraft:spider_spawn_egg",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:entity_properties",
+                                    "entity": "direct_killer",
+                                    "predicate": {
+                                        "type": "minecraft:player",
+                                        "nbt": "{SelectedItem:{id:\"minecraft:golden_hoe\",tag:{StoredSpell:{id:\"randomthings:soul_reaping\"}}}}"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "minecraft:loot_table",
+                            "name": "minecraft:entities/original/spider"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

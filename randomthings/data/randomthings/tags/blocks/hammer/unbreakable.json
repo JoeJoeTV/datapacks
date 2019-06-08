@@ -1,0 +1,15 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:command_block",
+        "minecraft:bedrock",
+        "minecraft:structure_block",
+        "minecraft:spawner",
+        "minecraft:structure_void",
+        "minecraft:barrier",
+        "minecraft:petrified_oak_slab",
+        "minecraft:repeating_command_block",
+        "minecraft:chain_command_block",
+        "minecraft:dragon_egg"
+    ]
+}

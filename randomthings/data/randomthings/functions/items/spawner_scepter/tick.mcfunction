@@ -1,0 +1,1 @@
+execute as @e[type=minecraft:item,nbt={Item:{tag:{StoredSpawnerData:1b}}}] at @s if block ~ ~ ~ minecraft:cauldron run function randomthings:items/spawner_scepter/place_spawner

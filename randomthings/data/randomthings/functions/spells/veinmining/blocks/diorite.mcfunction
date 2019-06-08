@@ -1,0 +1,1 @@
+execute if entity @s[type=minecraft:item,nbt={Item:{id:"minecraft:diorite",Count:1b}}] run setblock ~ ~ ~ minecraft:diorite

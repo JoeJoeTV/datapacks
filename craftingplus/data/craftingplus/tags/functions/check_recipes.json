@@ -1,0 +1,7 @@
+{
+    "replace": false,
+    "values": [
+      "craftingplus:act/check_recipes",
+      "craftingplus:amt/check_recipes"
+    ]
+  }

@@ -1,0 +1,103 @@
+{
+    "type": "minecraft:block",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:enchanted_book",
+                    "conditions": [
+                        {
+                            "condition": "minecraft:match_tool",
+                            "predicate": {
+                                "nbt": "{CustomItemID:\"randomthings:spawner_scepter\"}"    
+                            }
+                        }
+                    ],
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{StoredSpawnerData:1b}"
+                        },
+                        {
+                            "function": "minecraft:copy_nbt",
+                            "source": "block_entity",
+                            "ops": [
+                                {
+                                    "source": "SpawnCount",
+                                    "target": "SpawnerData.SpawnCount",
+                                    "op": "replace"
+                                },
+                                {
+                                    "source": "SpawnRange",
+                                    "target": "SpawnerData.SpawnRange",
+                                    "op": "replace"
+                                },
+                                {
+                                    "source": "Delay",
+                                    "target": "SpawnerData.Delay",
+                                    "op": "replace"
+                                },
+                                {
+                                    "source": "MinSpawnDelay",
+                                    "target": "SpawnerData.MinSpawnDelay",
+                                    "op": "replace"
+                                },
+                                {
+                                    "source": "MaxSpawnDelay",
+                                    "target": "SpawnerData.MaxSpawnDelay",
+                                    "op": "replace"
+                                },
+                                {
+                                    "source": "MaxNearbyEntities",
+                                    "target": "SpawnerData.MaxNearbyEntities",
+                                    "op": "replace"
+                                },
+                                {
+                                    "source": "RequiredPlayerRange",
+                                    "target": "SpawnerData.RequiredPlayerRange",
+                                    "op": "replace"
+                                },
+                                {
+                                    "source": "SpawnData",
+                                    "target": "SpawnerData.SpawnData",
+                                    "op": "replace"
+                                },
+                                {
+                                    "source": "SpawnPotentials",
+                                    "target": "SpawnerData.SpawnPotentials",
+                                    "op": "replace"
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "text": "Verfluchte Seele",
+                                "color": "yellow",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "entity": "this",
+                            "lore": [
+                                {
+                                    "text": "In diesem Buch ist eine",
+                                    "color": "gray",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "verfluchte Seele gefangen",
+                                    "color": "gray",
+                                    "italic": false
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+execute as @s[scores={setwarp=1}] store result score 1 ptpp.warps.x run data get entity @s Pos[0]
+execute as @s[scores={setwarp=1}] store result score 1 ptpp.warps.y run data get entity @s Pos[1]
+execute as @s[scores={setwarp=1}] store result score 1 ptpp.warps.z run data get entity @s Pos[2]
+execute as @s[scores={setwarp=1}] run tellraw @s ["",{"text":"[","color":"white"},{"text":"TP","color":"dark_purple"},{"text":"LUS","color":"dark_green"},{"text":"] ","color":"white"},{"text":"Warppunkt","color":"gold"},{"score":{"name":"1","objective":"setwarp"},"color":"gold"},{"text":" wurde festgelegt zu: ","color":"white"},{"text":"X: ","color":"dark_red"},{"score":{"name":"1","objective":"ptpp.warps.x"},"color":"dark_red"},{"text":" ","color":"white"},{"text":"Y: ","color":"dark_green"},{"score":{"name":"1","objective":"ptpp.warps.y"},"color":"dark_green"},{"text":" ","color":"white"},{"text":"Z: ","color":"dark_blue"},{"score":{"name":"@s","objective":"ptpp.warp.1.z"},"color":"dark_blue"}]
+
+execute as @s[scores={setwarp=2}] store result score 2 ptpp.warps.x run data get entity @s Pos[0]
+execute as @s[scores={setwarp=2}] store result score 2 ptpp.warps.y run data get entity @s Pos[1]
+execute as @s[scores={setwarp=2}] store result score 2 ptpp.warps.z run data get entity @s Pos[2]
+execute as @s[scores={setwarp=2}] run tellraw @s ["",{"text":"[","color":"white"},{"text":"TP","color":"dark_purple"},{"text":"LUS","color":"dark_green"},{"text":"] ","color":"white"},{"text":"Warppunkt","color":"gold"},{"score":{"name":"2","objective":"setwarp"},"color":"gold"},{"text":" wurde festgelegt zu: ","color":"white"},{"text":"X: ","color":"dark_red"},{"score":{"name":"2","objective":"ptpp.warps.x"},"color":"dark_red"},{"text":" ","color":"white"},{"text":"Y: ","color":"dark_green"},{"score":{"name":"2","objective":"ptpp.warps.y"},"color":"dark_green"},{"text":" ","color":"white"},{"text":"Z: ","color":"dark_blue"},{"score":{"name":"@s","objective":"ptpp.warp.2.z"},"color":"dark_blue"}]
+
+execute as @s[scores={setwarp=3}] store result score 3 ptpp.warps.x run data get entity @s Pos[0]
+execute as @s[scores={setwarp=3}] store result score 3 ptpp.warps.y run data get entity @s Pos[1]
+execute as @s[scores={setwarp=3}] store result score 3 ptpp.warps.z run data get entity @s Pos[2]
+execute as @s[scores={setwarp=3}] run tellraw @s ["",{"text":"[","color":"white"},{"text":"TP","color":"dark_purple"},{"text":"LUS","color":"dark_green"},{"text":"] ","color":"white"},{"text":"Warppunkt","color":"gold"},{"score":{"name":"3","objective":"setwarp"},"color":"gold"},{"text":" wurde festgelegt zu: ","color":"white"},{"text":"X: ","color":"dark_red"},{"score":{"name":"3","objective":"ptpp.warps.x"},"color":"dark_red"},{"text":" ","color":"white"},{"text":"Y: ","color":"dark_green"},{"score":{"name":"3","objective":"ptpp.warps.y"},"color":"dark_green"},{"text":" ","color":"white"},{"text":"Z: ","color":"dark_blue"},{"score":{"name":"@s","objective":"ptpp.warp.3.z"},"color":"dark_blue"}]
+
+execute as @s[scores={setwarp=4}] store result score 4 ptpp.warps.x run data get entity @s Pos[0]
+execute as @s[scores={setwarp=4}] store result score 4 ptpp.warps.y run data get entity @s Pos[1]
+execute as @s[scores={setwarp=4}] store result score 4 ptpp.warps.z run data get entity @s Pos[2]
+execute as @s[scores={setwarp=4}] run tellraw @s ["",{"text":"[","color":"white"},{"text":"TP","color":"dark_purple"},{"text":"LUS","color":"dark_green"},{"text":"] ","color":"white"},{"text":"Warppunkt","color":"gold"},{"score":{"name":"4","objective":"setwarp"},"color":"gold"},{"text":" wurde festgelegt zu: ","color":"white"},{"text":"X: ","color":"dark_red"},{"score":{"name":"4","objective":"ptpp.warps.x"},"color":"dark_red"},{"text":" ","color":"white"},{"text":"Y: ","color":"dark_green"},{"score":{"name":"4","objective":"ptpp.warps.y"},"color":"dark_green"},{"text":" ","color":"white"},{"text":"Z: ","color":"dark_blue"},{"score":{"name":"@s","objective":"ptpp.warp.4.z"},"color":"dark_blue"}]
+
+execute as @s[scores={setwarp=5}] store result score 5 ptpp.warps.x run data get entity @s Pos[0]
+execute as @s[scores={setwarp=5}] store result score 5 ptpp.warps.y run data get entity @s Pos[1]
+execute as @s[scores={setwarp=5}] store result score 5 ptpp.warps.z run data get entity @s Pos[2]
+execute as @s[scores={setwarp=5}] run tellraw @s ["",{"text":"[","color":"white"},{"text":"TP","color":"dark_purple"},{"text":"LUS","color":"dark_green"},{"text":"] ","color":"white"},{"text":"Warppunkt","color":"gold"},{"score":{"name":"5","objective":"setwarp"},"color":"gold"},{"text":" wurde festgelegt zu: ","color":"white"},{"text":"X: ","color":"dark_red"},{"score":{"name":"5","objective":"ptpp.warps.x"},"color":"dark_red"},{"text":" ","color":"white"},{"text":"Y: ","color":"dark_green"},{"score":{"name":"5","objective":"ptpp.warps.y"},"color":"dark_green"},{"text":" ","color":"white"},{"text":"Z: ","color":"dark_blue"},{"score":{"name":"@s","objective":"ptpp.warp.5.z"},"color":"dark_blue"}]
+
+execute as @s[scores={setwarp=6}] store result score 6 ptpp.warps.x run data get entity @s Pos[0]
+execute as @s[scores={setwarp=6}] store result score 6 ptpp.warps.y run data get entity @s Pos[1]
+execute as @s[scores={setwarp=6}] store result score 6 ptpp.warps.z run data get entity @s Pos[2]
+execute as @s[scores={setwarp=6}] run tellraw @s ["",{"text":"[","color":"white"},{"text":"TP","color":"dark_purple"},{"text":"LUS","color":"dark_green"},{"text":"] ","color":"white"},{"text":"Warppunkt","color":"gold"},{"score":{"name":"6","objective":"setwarp"},"color":"gold"},{"text":" wurde festgelegt zu: ","color":"white"},{"text":"X: ","color":"dark_red"},{"score":{"name":"6","objective":"ptpp.warps.x"},"color":"dark_red"},{"text":" ","color":"white"},{"text":"Y: ","color":"dark_green"},{"score":{"name":"6","objective":"ptpp.warps.y"},"color":"dark_green"},{"text":" ","color":"white"},{"text":"Z: ","color":"dark_blue"},{"score":{"name":"@s","objective":"ptpp.warp.6.z"},"color":"dark_blue"}]
+
+execute as @s[scores={setwarp=7}] store result score 7 ptpp.warps.x run data get entity @s Pos[0]
+execute as @s[scores={setwarp=7}] store result score 7 ptpp.warps.y run data get entity @s Pos[1]
+execute as @s[scores={setwarp=7}] store result score 7 ptpp.warps.z run data get entity @s Pos[2]
+execute as @s[scores={setwarp=7}] run tellraw @s ["",{"text":"[","color":"white"},{"text":"TP","color":"dark_purple"},{"text":"LUS","color":"dark_green"},{"text":"] ","color":"white"},{"text":"Warppunkt","color":"gold"},{"score":{"name":"7","objective":"setwarp"},"color":"gold"},{"text":" wurde festgelegt zu: ","color":"white"},{"text":"X: ","color":"dark_red"},{"score":{"name":"7","objective":"ptpp.warps.x"},"color":"dark_red"},{"text":" ","color":"white"},{"text":"Y: ","color":"dark_green"},{"score":{"name":"7","objective":"ptpp.warps.y"},"color":"dark_green"},{"text":" ","color":"white"},{"text":"Z: ","color":"dark_blue"},{"score":{"name":"@s","objective":"ptpp.warp.7.z"},"color":"dark_blue"}]
+
+scoreboard players set @s[scores={setwarp=1..}] setwarp 0

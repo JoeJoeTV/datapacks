@@ -1,0 +1,13 @@
+{
+    "replace": false,
+    "values": [
+      "randomthings:recipes/crafting/spawner_scepter",
+      "randomthings:recipes/crafting/magic_wand",
+      "randomthings:recipes/crafting/luck_potion",
+      "randomthings:recipes/crafting/stone_hammer",
+      "randomthings:recipes/crafting/iron_hammer",
+      "randomthings:recipes/crafting/golden_hammer",
+      "randomthings:recipes/crafting/diamond_hammer",
+      "randomthings:recipes/crafting/speed_ring"
+    ]
+  }

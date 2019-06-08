@@ -1,0 +1,35 @@
+{
+    "parent": "minecraft:recipes/root",
+    "rewards": {
+      "recipes": [
+        "randomtweaks:chest"
+      ]
+    },
+    "criteria": {
+      "has_leather": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "tag": "minecraft:logs",
+              "count": {
+                  "min": 8
+              }
+            }
+          ]
+        }
+      },
+      "has_the_recipe": {
+        "trigger": "minecraft:recipe_unlocked",
+        "conditions": {
+          "recipe": "randomtweaks:chest"
+        }
+      }
+    },
+    "requirements": [
+      [
+        "has_leather",
+        "has_the_recipe"
+      ]
+    ]
+  }

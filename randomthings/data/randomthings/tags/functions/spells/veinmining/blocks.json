@@ -1,0 +1,27 @@
+{
+    "replace": false,
+    "values": [
+        "randomthings:spells/veinmining/blocks/granite",
+        "randomthings:spells/veinmining/blocks/diorite",
+        "randomthings:spells/veinmining/blocks/andesite",
+        "randomthings:spells/veinmining/blocks/coal_ore",
+        "randomthings:spells/veinmining/blocks/lapis_ore",
+        "randomthings:spells/veinmining/blocks/obsidian",
+        "randomthings:spells/veinmining/blocks/diamond_ore",
+        "randomthings:spells/veinmining/blocks/glowstone",
+        "randomthings:spells/veinmining/blocks/emerald_ore",
+        "randomthings:spells/veinmining/blocks/nether_quartz_ore",
+        "randomthings:spells/veinmining/blocks/bone_block",
+        "randomthings:spells/veinmining/blocks/slime_block",
+        "randomthings:spells/veinmining/blocks/clay",
+        "randomthings:spells/veinmining/blocks/gravel",
+        "randomthings:spells/veinmining/blocks/gold_ore",
+        "randomthings:spells/veinmining/blocks/iron_ore",
+        "randomthings:spells/veinmining/blocks/oak_log",
+        "randomthings:spells/veinmining/blocks/spruce_log",
+        "randomthings:spells/veinmining/blocks/birch_log",
+        "randomthings:spells/veinmining/blocks/jungle_log",
+        "randomthings:spells/veinmining/blocks/acacia_log",
+        "randomthings:spells/veinmining/blocks/dark_oak_log"
+    ]
+}

@@ -1,0 +1,2 @@
+execute as @s[tag=droppedfromdispenser,nbt={Item:{id:"minecraft:potato"}}] if block ~ ~-0.6 ~ minecraft:farmland run tag @s add placeable
+execute as @s[tag=droppedfromdispenser,tag=placeable,nbt={Item:{id:"minecraft:potato"}}] run setblock ~ ~ ~ minecraft:potatoes

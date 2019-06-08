@@ -1,0 +1,2 @@
+execute as @e[type=minecraft:armor_stand,tag=rth.bb,tag=rth.bb.stand] at @s unless block ~ ~ ~ minecraft:dropper run loot spawn ~ ~1 ~ loot randomthings:bb
+execute as @e[type=minecraft:armor_stand,tag=rth.bb,tag=rth.bb.stand] at @s unless block ~ ~ ~ minecraft:dropper align xyz positioned ~0.5 ~0.5 ~0.5 run kill @e[tag=rth.bb,distance=..0.6,sort=nearest,limit=2]

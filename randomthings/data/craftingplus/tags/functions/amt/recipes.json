@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "randomthings:recipes/spellcrafting/fireball",
+    "randomthings:recipes/spellcrafting/teleport",
+    "randomthings:recipes/spellcrafting/lightning",
+    "randomthings:recipes/spellcrafting/evoker_fangs_line",
+    "randomthings:recipes/spellcrafting/evoker_fangs_circle",
+    "randomthings:recipes/spellcrafting/autosmelt",
+    "randomthings:recipes/spellcrafting/veinmining",
+    "randomthings:recipes/spellcrafting/soul_reaping"
+  ]
+}

@@ -1,0 +1,45 @@
+PLAN FOR death_chest STORE ITEM FUNCTION:
+-set count tmp score to 0
+-get full slots of chest 1
+-get full slots of chest 2
+-determine which chest
+
+-copy Item tag to Item.tag tag of item(@s)
+-add count tag accourding to tmp count score
+-copy Item.tag to chest(Items[-1])
+
+-Chech if Item.tag is empty
+
+-kill item(@s)
+
+old:
+
+scoreboard players set @s plib.tmp 0
+#Get Item count of Chest 1
+execute as @e[type=minecraft:armor_stand,tag=rth.death_chest.marker,tag=rth.death_chest.chest1,sort=nearest,limit=1] at @s align xyz positioned ~0.5 ~0.5 ~0.5 store result score @s rth.death_chest.cnt run data get block ~ ~ ~ Items
+execute as @e[type=minecraft:armor_stand,tag=rth.death_chest.marker,tag=rth.death_chest.chest1,sort=nearest,limit=1] at @s align xyz positioned ~0.5 ~0.5 ~0.5 unless score @s rth.death_chest.cnt matches 27 if data block ~ ~ ~ Items[-1] store result score @s plib.tmp run data get block ~ ~ ~ Items[-1].Slot
+execute if score @e[type=minecraft:armor_stand,tag=rth.death_chest.marker,tag=rth.death_chest.chest1,sort=nearest,limit=1] rth.death_chest.cnt matches 27 run tag @s add rth.death_chest.goto.chest2
+
+#Get Item Count of Chest 2
+#scoreboard players set @e[type=minecraft:armor_stand,tag=rth.death_chest.marker,tag=rth.death_chest.chest2,sort=nearest,limit=1] plib.tmp 0
+execute as @e[type=minecraft:armor_stand,tag=rth.death_chest.marker,tag=rth.death_chest.chest2,sort=nearest,limit=1] at @s align xyz positioned ~0.5 ~0.5 ~0.5 store result score @s rth.death_chest.cnt run data get block ~ ~ ~ Items
+execute as @e[type=minecraft:armor_stand,tag=rth.death_chest.marker,tag=rth.death_chest.chest2,sort=nearest,limit=1] at @s align xyz positioned ~0.5 ~0.5 ~0.5 unless score @s rth.death_chest.cnt matches 27 if data block ~ ~ ~ Items[-1] store result score @s plib.tmp run data get block ~ ~ ~ Items[-1].Slot
+execute as @s[tag=rth.death_chest.goto.chest2] if score @e[type=minecraft:armor_stand,tag=rth.death_chest.marker,tag=rth.death_chest.chest2,sort=nearest,limit=1] rth.death_chest.cnt matches 27 run tag @s add rth.death_chest.goto.drop
+tag @s[tag=rth.death_chest.goto.chest2,tag=rth.death_chest.goto.drop] remove rth.death_chest.goto.chest2
+
+execute as @s[tag=!rth.death_chest.goto.chest2,tag=!rth.death_chest.goto.drop] at @e[type=minecraft:armor_stand,tag=rth.death_chest.marker,tag=rth.death_chest.chest1,sort=nearest,limit=1] if data block ~ ~ ~ Items[-1] run scoreboard players add @s plib.tmp 1
+execute as @s[tag=!rth.death_chest.goto.chest2,tag=!rth.death_chest.goto.drop] store result entity @s Item.Count byte 1 run scoreboard players get @s plib.tmp
+execute as @s[tag=!rth.death_chest.goto.chest2,tag=!rth.death_chest.goto.drop] at @e[type=minecraft:armor_stand,tag=rth.death_chest.marker,tag=rth.death_chest.chest1,sort=nearest,limit=1] store success score @a test run data modify block ~ ~ ~ Items append from entity @s Item
+#execute as @s[tag=!rth.death_chest.goto.chest2,tag=!rth.death_chest.goto.drop] at @e[type=minecraft:armor_stand,tag=rth.death_chest.marker,tag=rth.death_chest.chest1,sort=nearest,limit=1] store result block ~ ~ ~ Items[-1].Slot byte 1 run scoreboard players get @e[type=minecraft:armor_stand,tag=rth.death_chest.marker,tag=rth.death_chest.chest1,sort=nearest,limit=1] plib.tmp 
+
+tellraw @a [{"text":"TMP CH1: "},{"score":{"name":"@e[type=minecraft:armor_stand,tag=rth.death_chest.marker,tag=rth.death_chest.chest1,sort=nearest,limit=1]","objective":"plib.tmp"}}]
+tellraw @a [{"text":"SUCC CPY CH1: "},{"score":{"name":"JoeJoeTV","objective":"test"}}]
+execute as @e[type=minecraft:armor_stand,tag=rth.death_chest.marker,tag=rth.death_chest.chest1,sort=nearest,limit=1] at @s run tellraw @a [{"text":"Last Slot CH1: "},{"nbt":"Items","block":"~ ~ ~"}]
+
+execute as @s[tag=rth.death_chest.goto.chest2,tag=!rth.death_chest.goto.drop] run execute as @e[type=minecraft:armor_stand,tag=rth.death_chest.marker,tag=rth.death_chest.chest2,sort=nearest,limit=1] at @s if data block ~ ~ ~ Items[-1] run scoreboard players add @s plib.tmp 1
+execute as @s[tag=rth.death_chest.goto.chest2,tag=!rth.death_chest.goto.drop] at @e[type=minecraft:armor_stand,tag=rth.death_chest.marker,tag=rth.death_chest.chest2,sort=nearest,limit=1] run data modify block ~ ~ ~ Items append from entity @s Item
+execute as @s[tag=rth.death_chest.goto.chest2,tag=!rth.death_chest.goto.drop] at @e[type=minecraft:armor_stand,tag=rth.death_chest.marker,tag=rth.death_chest.chest2,sort=nearest,limit=1] store result block ~ ~ ~ Items[-1].Slot byte 1 run scoreboard players get @e[type=minecraft:armor_stand,tag=rth.death_chest.marker,tag=rth.death_chest.chest2,sort=nearest,limit=1] plib.tmp 
+
+execute as @s[tag=!rth.death_chest.goto.chest2,tag=rth.death_chest.goto.drop] at @s run tp @s ~ ~1 ~
+
+kill @s[tag=!rth.death_chest.goto.drop]

@@ -1,0 +1,6 @@
+{
+    "replace": false,
+    "values": [
+      "randomthings:misc/death_chest/on_player_death"
+    ]
+  }

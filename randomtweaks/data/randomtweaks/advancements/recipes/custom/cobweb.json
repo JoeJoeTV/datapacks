@@ -1,0 +1,35 @@
+{
+    "parent": "minecraft:recipes/root",
+    "rewards": {
+      "recipes": [
+        "randomtweaks:cobweb"
+      ]
+    },
+    "criteria": {
+      "has_leather": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "item": "minecraft:string",
+              "count": {
+                  "min": 5
+              }
+            }
+          ]
+        }
+      },
+      "has_the_recipe": {
+        "trigger": "minecraft:recipe_unlocked",
+        "conditions": {
+          "recipe": "randomtweaks:cobweb"
+        }
+      }
+    },
+    "requirements": [
+      [
+        "has_leather",
+        "has_the_recipe"
+      ]
+    ]
+  }

@@ -1,0 +1,37 @@
+{
+    "type": "minecraft:block",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:alternatives",
+                    "children": [
+                        {
+                            "type": "minecraft:item",
+                            "name": "minecraft:nether_quartz_ore",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:match_tool",
+                                    "predicate": {
+                                        "nbt": "{StoredSpell:{id:\"randomthings:veinmining\"}}"
+                                    }
+                                }
+                            ],
+                            "functions": [
+                                {
+                                    "function": "minecraft:set_nbt",
+                                    "tag": "{MinedwithVeinMining:1b}"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "minecraft:loot_table",
+                            "name": "minecraft:blocks/original/nether_quartz_ore"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

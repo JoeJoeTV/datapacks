@@ -1,0 +1,12 @@
+execute as @e[type=minecraft:item,nbt={Age:0s,Item:{tag:{MinedwithAutoSmelt:1b}}}] at @s run tag @s add MinedwithAutoSmelt
+#execute as @e[type=minecraft:item,nbt={Age:0s,Item:{tag:{MinedwithAutoSmelt:1b}}}] at @s run data modify entity @s PickupDelay set value 2s
+execute as @e[type=minecraft:item,nbt={Age:0s,Item:{tag:{MinedwithAutoSmelt:1b}}}] at @s run data remove entity @s Item.tag.MinedwithAutoSmelt
+
+execute as @e[type=minecraft:item,tag=MinedwithAutoSmelt] at @s store result score @s plib.tmp run data get entity @s Item.tag
+execute as @e[type=minecraft:item,tag=MinedwithAutoSmelt] at @s unless score @s plib.tmp matches 1.. run data remove entity @s Item.tag
+
+execute as @e[type=minecraft:item,tag=MinedwithAutoSmelt] at @s align xyz positioned ~0.5 ~0.5 ~0.5 run playsound minecraft:block.lava.extinguish master @a[distance=..15] ~ ~ ~ 1 2
+execute as @e[type=minecraft:item,tag=MinedwithAutoSmelt] at @s align xyz positioned ~0.5 ~0.5 ~0.5 run particle minecraft:large_smoke ~ ~ ~ 0.1 0.1 0.1 0.01 10 normal
+
+scoreboard players reset @e[type=minecraft:item,tag=MinedwithAutoSmelt] plib.tmp
+tag @e[type=minecraft:item,tag=MinedwithAutoSmelt] remove MinedwithAutoSmelt

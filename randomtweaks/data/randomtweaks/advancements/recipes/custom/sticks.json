@@ -1,0 +1,35 @@
+{
+    "parent": "minecraft:recipes/root",
+    "rewards": {
+      "recipes": [
+        "randomtweaks:sticks"
+      ]
+    },
+    "criteria": {
+      "has_leather": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "tag": "minecraft:logs",
+              "count": {
+                  "min": 2
+              }
+            }
+          ]
+        }
+      },
+      "has_the_recipe": {
+        "trigger": "minecraft:recipe_unlocked",
+        "conditions": {
+          "recipe": "randomtweaks:sticks"
+        }
+      }
+    },
+    "requirements": [
+      [
+        "has_leather",
+        "has_the_recipe"
+      ]
+    ]
+  }

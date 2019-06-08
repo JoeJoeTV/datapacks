@@ -1,0 +1,10 @@
+{
+    "replace": false,
+    "values": [
+        "#randomthings:hammer/unbreakable_stone",
+        "minecraft:iron_block",
+        "minecraft:lapis_block",
+        "minecraft:iron_ore",
+        "minecraft:lapis_ore"
+    ]
+}

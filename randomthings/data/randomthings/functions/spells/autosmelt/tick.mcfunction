@@ -1,0 +1,1 @@
+execute as @e[type=minecraft:item,nbt={Age:0s,Item:{tag:{MinedwithAutoSmelt:1b}}}] at @s run function randomthings:spells/autosmelt/show_effects

@@ -1,0 +1,1 @@
+schedule function randomthings:blocks/block_breaker/update_timer 1t

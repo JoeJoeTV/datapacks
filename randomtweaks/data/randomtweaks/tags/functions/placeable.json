@@ -1,0 +1,13 @@
+{
+    "replace": false,
+    "values": [
+      "randomtweaks:dispenser/placeable/wheat_seeds",
+      "randomtweaks:dispenser/placeable/potato",
+      "randomtweaks:dispenser/placeable/carrot",
+      "randomtweaks:dispenser/placeable/beetroot_seeds",
+      "randomtweaks:dispenser/placeable/melon_seeds",
+      "randomtweaks:dispenser/placeable/pumpkin_seeds",
+      "randomtweaks:dispenser/placeable/nether_wart",
+      "randomtweaks:dispenser/placeable/cocoa_beans"
+    ]
+  }

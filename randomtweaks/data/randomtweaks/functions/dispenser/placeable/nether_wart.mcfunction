@@ -1,0 +1,2 @@
+execute as @s[tag=droppedfromdispenser,nbt={Item:{id:"minecraft:nether_wart"}}] if block ~ ~-0.6 ~ minecraft:soul_sand run tag @s add placeable
+execute as @s[tag=droppedfromdispenser,tag=placeable,nbt={Item:{id:"minecraft:nether_wart"}}] run setblock ~ ~ ~ minecraft:nether_wart

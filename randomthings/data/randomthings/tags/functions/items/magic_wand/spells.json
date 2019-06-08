@@ -1,0 +1,10 @@
+{
+    "replace": false,
+    "values": [
+        "randomthings:items/magic_wand/spells/fireball",
+        "randomthings:items/magic_wand/spells/teleport",
+        "randomthings:items/magic_wand/spells/lightning",
+        "randomthings:items/magic_wand/spells/evoker_fangs_line/evoker_fangs_line",
+        "randomthings:items/magic_wand/spells/evoker_fangs_circle"
+    ]
+}
