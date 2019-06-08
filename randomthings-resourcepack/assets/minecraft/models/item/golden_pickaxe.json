@@ -1,0 +1,20 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "item/golden_pickaxe"
+    },
+	"overrides": [ 
+        {
+            "predicate": {
+                "custom_model_data": 420001
+            },
+            "model": "item/custom/golden_hammer"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 420002
+            },
+            "model": "item/custom/spawner_scepter"
+        }
+    ]
+}

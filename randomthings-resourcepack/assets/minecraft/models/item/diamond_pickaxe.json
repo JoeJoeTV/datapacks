@@ -1,0 +1,14 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "item/diamond_pickaxe"
+    },
+	"overrides": [ 
+        {
+            "predicate": {
+                "custom_model_data": 420001
+            },
+            "model": "item/custom/diamond_hammer"
+        }
+    ]
+}
