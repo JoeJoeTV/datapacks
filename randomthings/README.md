@@ -71,3 +71,6 @@ This datapack adds a recipe for a luck potion.
 
 ### Ring of Acceleration
 A Ring that, when held in the mainhand, gives you extra speed
+
+### Death Chest
+When a player dies a death chest tries to spawn with all the players items in it.
