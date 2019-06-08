@@ -78,10 +78,13 @@ When a player is holding a tool, whose durability is below 10%, a warning will b
 ### Added/Changed Loot Tables
 
 #### Player
+---
 Now Drops Head of player, when killed with Looting I
 
 #### Shulker
+---
 Now always drops 2 Shulker Shells
 
 #### Ender Dragon
+---
 Now always drops an elytra
