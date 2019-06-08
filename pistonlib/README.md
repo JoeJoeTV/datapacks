@@ -1,6 +1,6 @@
 # PistonLib
 
-This is a bas "library" datapack which adds functions used by my other datapacks.
+This is a base "library" datapack which adds functions used by my other datapacks.
 
 ## Features
 * Percentage Calculation
