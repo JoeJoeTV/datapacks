@@ -10,6 +10,8 @@
         "minecraft:petrified_oak_slab",
         "minecraft:repeating_command_block",
         "minecraft:chain_command_block",
-        "minecraft:dragon_egg"
+        "minecraft:dragon_egg",
+        "minecraft:water",
+        "minecraft:lava"
     ]
 }
