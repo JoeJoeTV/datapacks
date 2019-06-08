@@ -1,2 +1,2 @@
-# datapacks
-All datapacks I've made
+# JoeJoeTV's Datapacks
+My Minecraft Datapacks
