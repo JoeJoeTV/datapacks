@@ -24,6 +24,9 @@ A hammer breaks blocks in a 3x3 area infront of the player
 ### Magic Wand
 By itself the Magic Wand Does Nothing, but if a spell is applied to it, it can do cool things. Every spell uses a bit of mana when used.
 
+#### Recipe
+![Magic Wand Recipe](../assets/images/crafting_recipe_magic_wand.png)
+
 #### Spells
 There are Spells that can only be applied to a Magic Wand:
 * Small Meteorite
