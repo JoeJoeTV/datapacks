@@ -46,27 +46,27 @@ There are Spells that can only be applied to a Magic Wand:
   * Summons a Fireball where the player is looking.
   * Uses 40 mana.
   * Recipe:
-  ![Small Meteorite Recipe](../assets/images/spell_recipe_fireball.png)
+![Small Meteorite Recipe](../assets/images/spell_recipe_fireball.png)
 * Sight of the Enderman
   * Teleports the player to the position where he's looking (max. 50 blocks) 
   * Uses 50 mana
   * Recipe:
-  ![Sight of the Enderman Recipe](../assets/images/spell_recipe_teleport.png)
+![Sight of the Enderman Recipe](../assets/images/spell_recipe_teleport.png)
 * Power of Zeus
   * Suommons a lightning bolt at the position the player is looking.
   * Uses 50 mana.
   * Recipe:
-  ![Power of Zeus Recipe](../assets/images/spell_recipe_lightning.png)
+![Power of Zeus Recipe](../assets/images/spell_recipe_lightning.png)
 * Line of the Evoker
   * Summons a line of evoker fangs infront of the player and in the direction the player is looking.
   * Uses 65 mana.
   * Recipe:
-  ![Line of the Evoker Recipe](../assets/images/spell_recipe_evoker_fang_line.png)
+![Line of the Evoker Recipe](../assets/images/spell_recipe_evoker_fang_line.png)
 * Circle of the Evoker
   * Summons a circle of evoker fangs around the player.
   * Uses 65 mana.
   * Recipe:
-  ![Circle of the Evoker Recipe](../assets/images/spell_recipe_evoker_fang_circle.png)
+![Circle of the Evoker Recipe](../assets/images/spell_recipe_evoker_fang_circle.png)
   
 ### Spawner Scepter
 Can be used to mine a spawner and results in getting a **Cursed Mob Soul** of the mob in the spawner.
