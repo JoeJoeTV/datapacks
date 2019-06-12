@@ -1,16 +1,18 @@
 tag @s add ptpp.plr.primary
 execute as @a[tag=plib.plr.hasid,tag=!ptpp.plr.destination] if score @s plib.plr.id = @a[tag=ptpp.plr.primary,limit=1] tpa unless score @s plib.plr.id = @a[tag=ptpp.plr.primary,limit=1] plib.plr.id run tag @s add ptpp.plr.secondary
 #Error Msg
-## If destination player already has a request from someone
-execute as @a[tag=plib.plr.hasid,tag=ptpp.plr.destination] if score @s plib.plr.id = @a[tag=ptpp.plr.primary,limit=1] tpa unless score @s plib.plr.id = @a[tag=ptpp.plr.primary,limit=1] plib.plr.id run tellraw @a[tag=ptpp.plr.primary,limit=1] [{"text":"[","color":"white"},{"text":"TP","color":"dark_purple"},{"text":"LUS","color":"dark_green"},{"text":"] ","color":"white"},{"text":"Diesem Spieler wurde bereits eine anfrage gesendet!","color":"red"}]
+## If destination player already has a request from someone add tag
+execute as @a[tag=plib.plr.hasid,tag=ptpp.plr.destination] if score @s plib.plr.id = @a[tag=ptpp.plr.primary,limit=1] tpa unless score @s plib.plr.id = @a[tag=ptpp.plr.primary,limit=1] plib.plr.id run tag @a[tag=ptpp.plr.primary,limit=1] add tpp.err.already_received
+#Tellraw for above
+execute unless entity @a[tag=ptpp.plr.secondary] run tellraw @s[tag=tpp.err.already_received] [{"text":"[","color":"white"},{"text":"TP","color":"dark_purple"},{"text":"LUS","color":"dark_green"},{"text":"] ","color":"white"},{"text":"Diesem Spieler wurde bereits eine anfrage gesendet!","color":"red"}]
 
 ## If Player ID = requested ID set tag
 execute as @a[tag=plib.plr.hasid,tag=!ptpp.plr.destination] if score @s plib.plr.id = @a[tag=ptpp.plr.primary,limit=1] tpa if score @s plib.plr.id = @a[tag=ptpp.plr.primary,limit=1] plib.plr.id run tag @a[tag=ptpp.plr.primary,limit=1] add ptpp.plr.issender 
 
 #Error MSG for same ID
-execute unless entity @a[tag=ptpp.plr.secondary] if entity @a[tag=ptpp.plr.issender] run tellraw @s ["",{"text":"[","color":"white"},{"text":"TP","color":"dark_purple"},{"text":"LUS","color":"dark_green"},{"text":"] ","color":"white"},{"text":"Du kannst dich nicht zu dir selbst teleportieren!","color":"red"}]
+execute unless entity @a[tag=ptpp.plr.secondary] if entity @a[tag=ptpp.plr.issender] run tellraw @s[tag=!tpp.err.already_received] ["",{"text":"[","color":"white"},{"text":"TP","color":"dark_purple"},{"text":"LUS","color":"dark_green"},{"text":"] ","color":"white"},{"text":"Du kannst dich nicht zu dir selbst teleportieren!","color":"red"}]
 #Error MSG for non existing player
-execute unless entity @a[tag=ptpp.plr.secondary] unless entity @a[tag=ptpp.plr.issender] run tellraw @s ["",{"text":"[","color":"white"},{"text":"TP","color":"dark_purple"},{"text":"LUS","color":"dark_green"},{"text":"]","color":"white"},{"text":" Ein Spieler mit dieser ID existiert nicht, oder der Spieler mit dieser ID ist nicht auf dem Server!","color":"red"}]
+execute unless entity @a[tag=ptpp.plr.secondary] unless entity @a[tag=ptpp.plr.issender] run tellraw @s[tag=!tpp.err.already_received] ["",{"text":"[","color":"white"},{"text":"TP","color":"dark_purple"},{"text":"LUS","color":"dark_green"},{"text":"]","color":"white"},{"text":" Ein Spieler mit dieser ID existiert nicht, oder der Spieler mit dieser ID ist nicht auf dem Server!","color":"red"}]
 
 execute as @s[tag=ptpp.plr.primary,tag=!ptpp.plr.issender] if entity @a[tag=ptpp.plr.secondary,limit=1] run scoreboard players operation @s ptpp.plr.id.dest = @s tpa 
 execute as @s[tag=ptpp.plr.primary,tag=!ptpp.plr.issender] if entity @a[tag=ptpp.plr.secondary,limit=1] run tag @s add ptpp.plr.request
