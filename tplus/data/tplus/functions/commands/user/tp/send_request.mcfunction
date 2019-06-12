@@ -1,6 +1,9 @@
 tag @s add ptpp.plr.primary
 execute as @a[tag=plib.plr.hasid,tag=!ptpp.plr.destination] if score @s plib.plr.id = @a[tag=ptpp.plr.primary,limit=1] tpa unless score @s plib.plr.id = @a[tag=ptpp.plr.primary,limit=1] plib.plr.id run tag @s add ptpp.plr.secondary
 #Error Msg
+## If destination player already has a request from someone
+execute as @a[tag=plib.plr.hasid,tag=ptpp.plr.destination] if score @s plib.plr.id = @a[tag=ptpp.plr.primary,limit=1] tpa unless score @s plib.plr.id = @a[tag=ptpp.plr.primary,limit=1] plib.plr.id run tellraw @a[tag=ptpp.plr.primary,limit=1] [{"text":"[","color":"white"},{"text":"TP","color":"dark_purple"},{"text":"LUS","color":"dark_green"},{"text":"] ","color":"white"},{"text":"Diesem Spieler wurde bereits eine anfrage gesendet!","color":"red"}]
+
 ## If Player ID = requested ID set tag
 execute as @a[tag=plib.plr.hasid,tag=!ptpp.plr.destination] if score @s plib.plr.id = @a[tag=ptpp.plr.primary,limit=1] tpa if score @s plib.plr.id = @a[tag=ptpp.plr.primary,limit=1] plib.plr.id run tag @a[tag=ptpp.plr.primary,limit=1] add ptpp.plr.issender 
 

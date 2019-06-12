@@ -17,6 +17,6 @@ execute as @a[scores={tpaccept=1..}] if score @s perm.cmd.tparecv matches 1.. ru
 execute as @a[scores={tpdeny=1..}] if score @s perm.cmd.tparecv matches 1.. run function tplus:commands/user/tpdeny
 execute as @a[scores={tpcancel=1..}] if score @s perm.cmd.tpa matches 1.. run function tplus:commands/user/tpcancel
 
-#RESET TP REQUESTS
+#TP RESET REQUESTS
 execute as @a[tag=plib.plr.hasid,tag=ptpp.plr.request,tag=ptpp.remove_request] run function tplus:commands/user/tp/request_reset_request
 execute as @a[tag=plib.plr.hasid,tag=ptpp.plr.destination,tag=ptpp.remove_request] run function tplus:commands/user/tp/request_reset_destination
