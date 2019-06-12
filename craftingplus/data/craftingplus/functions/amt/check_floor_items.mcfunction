@@ -1,0 +1,2 @@
+#Check for crafting table item near player
+execute as @a at @s as @e[type=minecraft:item,distance=..6,nbt={OnGround:1b,Item:{id:"minecraft:enchanting_table",Count:1b}}] at @s run function craftingplus:amt/get

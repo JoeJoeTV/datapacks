@@ -1,2 +1,2 @@
-function craftingplus:act/get
+function craftingplus:act/check_floor_items
 function craftingplus:act/refund

@@ -1,2 +1,2 @@
-function craftingplus:amt/get
+function craftingplus:amt/check_floor_items
 function craftingplus:amt/refund
