@@ -29,9 +29,9 @@ When a player is holding a tool, whose durability is below 10%, a warning will b
   * Type: Crafting/Shaped
   * Ingredients:
     * Logs (L)
-  * Shape: LLL
+  * Shape: ```LLL
            L L
-           LLL
+           LLL```
 * Cobweb
   * Type: Crafting/Shaped
   * Ingredients:
