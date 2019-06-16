@@ -13,7 +13,7 @@ execute as @s[tag=pcp.floor.amt.craft] at @s align xyz run summon minecraft:armo
 #Summon Right Click Detect Villager
 execute as @s[tag=pcp.floor.amt.craft] at @s align xyz run summon minecraft:villager ~0.5 ~-1 ~0.5 {ActiveEffects:[{Id:14b,Amplifier:1b,Duration:20000000,ShowParticles:0b}],OnGround:1b,NoGravity:1b,Silent:1b,Invulnerable:1b,CustomNameVisible:0b,PersistenceRequired:1b,NoAI:1b,CanPickUpLoot:0b,Willing:0b,Tags:["pcp.amt","pcp.amt.villager","nokill","permanent_invisible"],VillagerData:{level:1,profession:"minecraft:nitwit",type:"minecraft:plains"},Offers:{}}
 #Set Name of Dropper
-execute as @s[tag=pcp.floor.amt.craft] at @s align xyz run data merge block ~ ~-1 ~ {CustomName:"{\"text\":\"Verbesserte Werkbank\"}"}
+execute as @s[tag=pcp.floor.amt.craft] at @s align xyz run data merge block ~ ~-1 ~ {CustomName:"{\"text\":\"Verbesserter Zaubertisch\"}"}
 #Play Sound
 execute as @s[tag=pcp.floor.amt.craft] at @s align xyz run playsound minecraft:entity.player.levelup voice @a[distance=..10]
 
