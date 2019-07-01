@@ -3,7 +3,7 @@ function tplus:enable_triggers
 
 #ADMIN COMMANDS
 execute as @a[scores={setspawn=1..,perm.cmd.setspwn=1..}] run function tplus:commands/admin/setspawn
-execute as @a[scores={setwarp=1..,perm.cmd.setspwn=1..}] run function tplus:commands/admin/setwarp
+execute as @a[scores={setwarp=1..,perm.cmd.setwarp=1..}] run function tplus:commands/admin/setwarp
 
 #USER COMMANDS
 execute as @a[scores={sethome=1..,perm.cmd.home=1..}] run function tplus:commands/user/sethome
