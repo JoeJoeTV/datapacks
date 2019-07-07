@@ -8,8 +8,8 @@
 #Add tag to player for identification
 tag @s add plib.stp.plr
 
-#Check if y coord is 0 or smaller
-execute if score @s plib.stp.y matches ..0 run scoreboard players set @s plib.stp.y 2
+#Check if y coord is 1 or smaller
+execute if score @s plib.stp.y matches ..1 run scoreboard players set @s plib.stp.y 3
 
 #Summon Area Effect Cloud as Marker
 execute as @s at @s run summon minecraft:area_effect_cloud ~ ~ ~ {NoGravity:1b,CustomNameVisible:0b,Particle:"block air",ReapplicationDelay:0,Radius:0f,RadiusPerTick:0f,RadiusOnUse:0f,Duration:3,DurationOnUse:0f,Age:0,WaitTime:0,Tags:["plib.stp.marker","nokill"]}
