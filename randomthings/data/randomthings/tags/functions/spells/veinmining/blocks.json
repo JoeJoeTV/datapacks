@@ -22,6 +22,7 @@
         "randomthings:spells/veinmining/blocks/birch_log",
         "randomthings:spells/veinmining/blocks/jungle_log",
         "randomthings:spells/veinmining/blocks/acacia_log",
-        "randomthings:spells/veinmining/blocks/dark_oak_log"
+        "randomthings:spells/veinmining/blocks/dark_oak_log",
+        "randomthings:spells/veinmining/blocks/sand"
     ]
 }

@@ -9,6 +9,24 @@
                     "children": [
                         {
                             "type": "minecraft:item",
+                            "name": "minecraft:sand",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:match_tool",
+                                    "predicate": {
+                                        "nbt": "{StoredSpell:{id:\"randomthings:veinmining\"}}"
+                                    }
+                                }
+                            ],
+                            "functions": [
+                                {
+                                    "function": "minecraft:set_nbt",
+                                    "tag": "{MinedwithVeinMining:1b}"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "minecraft:item",
                             "name": "minecraft:glass",
                             "conditions": [
                                 {
