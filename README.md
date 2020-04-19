@@ -28,4 +28,4 @@ My Minecraft Datapacks
   * **Dependencies:** PistonLib
   * **MC Version:** 1.14.x, 1.15.x
   
-**If you see any issues rgarding 1.15.x compatability, please repot them, by making an [Issue](https://github.com/JoeJoeTV/datapacks/issues).
+**If you see any issues rgarding 1.15.x compatability, please repot them, by making an [Issue](https://github.com/JoeJoeTV/datapacks/issues).**
