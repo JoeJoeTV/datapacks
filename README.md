@@ -25,11 +25,13 @@ My Minecraft Datapacks
 * **[RandomThings](https://github.com/JoeJoeTV/datapacks/tree/master/randomthings)**
   * **Version:** 1.0.2
   * **Description:** This datapack adds verious items, blocks and features to Minecraft, like a magic wand with spells, hammers, a way to                      get spawners in survival, etc.
-  * **Dependencies:** PistonLib
+  * **Dependencies:** PistonLib; CraftingPlus
   * **MC Version:** 1.14.x, 1.15.x
   
-**If you see any issues rgarding 1.15.x compatability, please repot them, by making an [Issue](https://github.com/JoeJoeTV/datapacks/issues).**
+**If you see any issues regarding 1.15.x compatability, please repot them, by making an [Issue](https://github.com/JoeJoeTV/datapacks/issues).**
 
+# Installing
+To install any of the datapacks, you firstly need to check the dependencies, because all of my datapacks depend on PistonLib and some of them on CraftingPlus. Then you donload the datapacks you want to install from this Github Repo and their dependencies and put them in the datapacks folder of your world. To finsish the installation, go into the world or if you're already in, run ```/reload```. In chat you will see a Message, which shows all installed datapacks.
 
 # Uninstalling
 To uninstall any of the datapacks, you need to have access to the ```/function``` command(op).
