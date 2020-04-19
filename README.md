@@ -25,7 +25,7 @@ My Minecraft Datapacks
 * **[RandomThings](https://github.com/JoeJoeTV/datapacks/tree/master/randomthings)**
   * **Version:** 1.0.2
   * **Description:** This datapack adds verious items, blocks and features to Minecraft, like a magic wand with spells, hammers, a way to                      get spawners in survival, etc.
-  * **Dependencies:** PistonLib; CraftingPlus
+  * **Dependencies:** PistonLib; CraftingPlus, Randomthings-Resourcepack
   * **MC Version:** 1.14.x, 1.15.x
   
 **If you see any issues regarding 1.15.x compatability, please repot them, by making an [Issue](https://github.com/JoeJoeTV/datapacks/issues).**
