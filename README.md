@@ -29,3 +29,9 @@ My Minecraft Datapacks
   * **MC Version:** 1.14.x, 1.15.x
   
 **If you see any issues rgarding 1.15.x compatability, please repot them, by making an [Issue](https://github.com/JoeJoeTV/datapacks/issues).**
+
+
+# Uninstalling
+To uninstall any of the datapacks, you need to have access to the ```/function``` command(op).
+To uninstall all datapacks at the same time run ```/function pistonlib:uninstall```.
+To uninstall only one datapack, run ```/function <datapack name>:uninstall```, where <datapack name> is replaced with e.g. tplus, randomthings, craftingplus, etc.
