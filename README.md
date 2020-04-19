@@ -34,4 +34,4 @@ My Minecraft Datapacks
 # Uninstalling
 To uninstall any of the datapacks, you need to have access to the ```/function``` command(op).
 To uninstall all datapacks at the same time run ```/function pistonlib:uninstall```.
-To uninstall only one datapack, run ```/function <datapack name>:uninstall```, where <datapack name> is replaced with e.g. tplus, randomthings, craftingplus, etc.
+To uninstall only one datapack, run ```/function <datapack name>:uninstall```, where ```<datapack name>``` is replaced with e.g. tplus, randomthings, craftingplus, etc.
