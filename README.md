@@ -32,6 +32,7 @@ My Minecraft Datapacks
 
 # Installing
 To install any of the datapacks, you firstly need to check the dependencies, because all of my datapacks depend on PistonLib and some of them on CraftingPlus. Then you donload the datapacks you want to install from this Github Repo and their dependencies and put them in the datapacks folder of your world. To finsish the installation, go into the world or if you're already in, run ```/reload```. In chat you will see a Message, which shows all installed datapacks.
+If the datapack needs a Resourcepack, also download that and put it in your resourcepacks folder and activate it when using the datapack.
 
 # Uninstalling
 To uninstall any of the datapacks, you need to have access to the ```/function``` command(op).
